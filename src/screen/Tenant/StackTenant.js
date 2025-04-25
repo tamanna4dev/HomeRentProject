@@ -41,7 +41,9 @@ export default function StackTenant() {
       <Stack.Screen name="LocationSelect" component={LocationSelect} />
       <Stack.Screen name="PropertyDetail" component={PropertyDetail} />
       <Stack.Screen name="FilterScreen" component={FilterScreen} />
-      <Stack.Screen name="FavoritesScreen" component={FavoritesScreen} />
+      <Stack.Screen name="Favorites" component={FavoritesScreen} />
+
+      {/* <Stack.Screen name="FavoritesScreen" component={FavoritesScreen} /> */}
       <Stack.Screen name="FavoritesDetail" component={FavoritesDetail} />
       <Stack.Screen name="NotificationsScreen" component={NotificationsScreen} />
       <Stack.Screen name="ProfileScreen" component={ProfileScreen} />

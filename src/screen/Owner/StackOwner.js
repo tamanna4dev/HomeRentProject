@@ -22,7 +22,7 @@ import MainApp from '../../Navigation/TenantBottomNavigation'
 import AllPhotosScreen from '../AllPhotosScreen';
 import ProfileDetailsScreen from '../ProfileDetailsScreen';
 import HomeScreen from '../HomeScreen';
-
+import AllPropeties from '../AllPropeties'
 
 const Stack = createNativeStackNavigator();
 
@@ -54,6 +54,8 @@ export default function StackOwner() {
      <Stack.Screen name="AllPhotos" component={AllPhotosScreen} />
 <Stack.Screen name="ProfileDetailsScreen" component={ProfileDetailsScreen} />
 <Stack.Screen name="HomeScreen" component={HomeScreen} />
+<Stack.Screen name="AllPropeties" component={AllPropeties} />
+
 
     
     </Stack.Navigator>

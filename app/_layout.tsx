@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { FavoritesProvider } from '../src/screen/FavoritesContext';  
 import StackNavigation from '../src/Navigation/StackNavigation'
 
-const _layout = () => {
-  return <StackNavigation/>
+export default function _layout() {
+  return (
+    <FavoritesProvider>
+      <StackNavigation />
+    </FavoritesProvider>
+  );
 }
-
-export default _layout
-
-const styles = StyleSheet.create({})

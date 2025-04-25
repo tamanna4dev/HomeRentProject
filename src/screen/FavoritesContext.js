@@ -1,4 +1,4 @@
-// screen/FavoritesContext.js
+// context/FavoritesContext.js
 import React, { createContext, useContext, useState } from 'react';
 
 const FavoritesContext = createContext();
@@ -6,12 +6,12 @@ const FavoritesContext = createContext();
 export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
 
-  const toggleFavorite = (property) => {
-    const isFav = favorites.some((item) => item.id === property.id);
-    if (isFav) {
-      setFavorites(favorites.filter((item) => item.id !== property.id));
+  const toggleFavorite = (item) => {
+    const exists = favorites.some(fav => fav.id === item.id);
+    if (exists) {
+      setFavorites(favorites.filter(fav => fav.id !== item.id));
     } else {
-      setFavorites([...favorites, property]);
+      setFavorites([...favorites, item]);
     }
   };
 

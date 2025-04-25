@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ImageBackground, TouchableOpacity, ScrollView } from 'react-native';
 import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
-import { useFavorites } from './FavoritesContext';
+import { useFavorites } from '../screen/FavoritesContext';
 
 const properties = [ // 👈 YEH LINE ZARUR ADD KARO
   {
@@ -28,6 +28,40 @@ const properties = [ // 👈 YEH LINE ZARUR ADD KARO
     size: '1,000 sqft',
     tag: 'Furnished',
   },
+  {
+    id: '3',
+    image: require('../assents/5.png'),
+    price: '₹9,600/month',
+    beds: 2,
+    baths: 2,
+    kitchen: 1,
+    address: '46, Jagjiwan Pura, Fatehabad',
+    size: '1,000 sqft',
+    tag: 'Furnished',
+  },
+  {
+    id: '4',
+    image: require('../assents/5.png'),
+    price: '₹9,600/month',
+    beds: 2,
+    baths: 2,
+    kitchen: 1,
+    address: '46, Jagjiwan Pura, Fatehabad',
+    size: '1,000 sqft',
+    tag: 'Furnished',
+  },
+  {
+    id: '5',
+    image: require('../assents/5.png'),
+    price: '₹9,600/month',
+    beds: 2,
+    baths: 2,
+    kitchen: 1,
+    address: '46, Jagjiwan Pura, Fatehabad',
+    size: '1,000 sqft',
+    tag: 'Furnished',
+  },
+
 ];
 
 export default function FavoritesDetail() {
